@@ -86,7 +86,6 @@ nav {
 }
 
 .btn-outline {
-    background-color: transparent;
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
 }
@@ -94,7 +93,6 @@ nav {
 /* PÁGINA DE ADOÇÃO */
 .adocao-section {
     padding: 60px 0;
-    text-align: center;
 }
 
 .pets-grid {
@@ -106,9 +104,7 @@ nav {
 .card {
     border: 1px solid var(--color-primary);
     border-radius: 12px;
-    overflow: hidden; 
     width: 300px; 
-    text-align: left;
 }
 
 .card-info h3 {
@@ -166,7 +162,6 @@ nav {
 
 .sobre-img {
     width: 100%;
-    height: auto;
     border-radius: 12px;
 }
 
@@ -203,8 +198,6 @@ nav {
 }
 
 .contato-form {
-    padding: 30px;
-    border-radius: 12px;
     display: flex; 
     flex-direction: column; 
     gap: 20px;
@@ -226,7 +219,6 @@ nav {
 .contato-form textarea {
     width: 100%;
     padding: 12px;
-    border-radius: 6px;
     border: 1px solid var(--color-primary);
     background-color: var(--color-dark);
     color: var(--color-text);
@@ -250,8 +242,6 @@ nav {
 
 .contato-form button {
     border: none;
-    cursor: pointer;
     font-family: var(--font-main);
     font-size: 1.1rem;
-    margin-top: 10px;
 }
