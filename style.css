@@ -1,8 +1,7 @@
 :root {
     --color-primary: #FFB800; 
-    --color-dark: #121212; 
-    --color-dark-alt: #1E1E1E; 
-    --color-text: #F3F4F6; 
+    --color-dark: #F3F4F6;
+    --color-text: #121212; 
     --font-main: 'Segoe UI', system-ui, sans-serif;
 }
 
@@ -92,28 +91,10 @@ nav {
     border: 2px solid var(--color-primary);
 }
 
-footer {
-    padding: 30px 0;
-    text-align: center;
-    margin-top: 50px;
-    border-top: 1px solid #333;
-}
-
-/* PÁGINA DE ADOÇÃO0 */
+/* PÁGINA DE ADOÇÃO */
 .adocao-section {
     padding: 60px 0;
     text-align: center;
-}
-
-.titulo-secao {
-    font-size: 2.5rem;
-    color: var(--color-primary);
-    margin-bottom: 10px;
-}
-
-.subtitulo-secao {
-    margin-bottom: 40px;
-    color: #A0A0A0; 
 }
 
 .pets-grid {
@@ -123,7 +104,7 @@ footer {
 }
 
 .card {
-    border: 1px solid #333;
+    border: 1px solid var(--color-primary);
     border-radius: 12px;
     overflow: hidden; 
     width: 300px; 
@@ -181,7 +162,6 @@ footer {
 .sobre-texto p {
     font-size: 1.1rem;
     margin-bottom: 15px;
-    color: #D1D5DB; 
 }
 
 .sobre-img {
@@ -212,16 +192,17 @@ footer {
 .contato-info p {
     font-size: 1.1rem;
     margin-bottom: 25px;
-    color: #D1D5DB;
 }
 
-.dados-ong p {
+.dados-ong {
+    padding-left: 25px;
+}
+
+.dados-ong li {
     margin-bottom: 15px;
-    color: var(--color-text);
 }
 
 .contato-form {
-    background-color: var(--color-dark-alt);
     padding: 30px;
     border-radius: 12px;
     display: flex; 
@@ -235,27 +216,42 @@ footer {
     gap: 8px;
 }
 
-.form-group label {
+.form-group > label,
+.form-label {
     font-weight: bold;
     color: var(--color-primary);
 }
 
 .contato-form input,
-.contato-form select,
 .contato-form textarea {
     width: 100%;
     padding: 12px;
     border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #2A2A2A;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-dark);
     color: var(--color-text);
     font-family: var(--font-main);
     font-size: 1rem;
 }
 
+.opcoes-assunto {
+    list-style: none;
+}
+
+.opcoes-assunto li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contato-form .opcoes-assunto input {
+    width: auto;
+}
+
 .contato-form button {
     border: none;
     cursor: pointer;
+    font-family: var(--font-main);
     font-size: 1.1rem;
     margin-top: 10px;
 }
