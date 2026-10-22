@@ -22,59 +22,47 @@
 
     <main class="container">
         <section class="contato-section">
-            
-            <div class="contato-info">
-                <h2>Fale Conosco</h2>
-                <p>Quer adotar, ser voluntário ou ajudar com mantimentos? Preencha o formulário ou entre em contato direto pelos nossos canais.</p>
-                
-                <ol class="dados-ong">
-                    <li>Endereço: Rua Colores, nº 100, Centro - Itaituba, PA</li>
-                    <li>WhatsApp: (00) 00000-0000</li>
-                    <li>Pix: chave@ficticia.com</li>
-                </ol>
-            </div>
+            <h2>Fale Conosco</h2>
+            <p>Quer adotar, ser voluntário ou ajudar com mantimentos? Preencha o formulário ou entre em contato direto pelos nossos canais.</p>
+
+            <ol class="dados-ong">
+                <li>Endereço: Rua Colores, nº 100, Centro - Itaituba, PA</li>
+                <li>WhatsApp: (00) 00000-0000</li>
+                <li>Pix: chave@ficticia.com</li>
+            </ol>
 
             <form class="contato-form">
-                <div class="form-group">
-                    <label for="nome">Seu Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
-                </div>
+                <label for="nome">Seu Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
 
-                <div class="form-group">
-                    <label for="email">Seu Email</label>
-                    <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
-                </div>
+                <label for="email">Seu Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
 
-                <div class="form-group">
-                    <span class="form-label">Assunto</span>
-                    <ul class="opcoes-assunto">
-                        <li>
-                            <input type="radio" id="assunto-adocao" name="assunto" value="adocao" checked>
-                            <label for="assunto-adocao">Quero Adotar</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="assunto-doacao" name="assunto" value="doacao">
-                            <label for="assunto-doacao">Quero Doar Mantimentos</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="assunto-voluntario" name="assunto" value="voluntario">
-                            <label for="assunto-voluntario">Quero ser Voluntário</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="assunto-outros" name="assunto" value="outros">
-                            <label for="assunto-outros">Outros</label>
-                        </li>
-                    </ul>
-                </div>
+                <h3>Assunto</h3>
+                <ul class="opcoes-assunto">
+                    <li>
+                        <input type="radio" id="assunto-adocao" name="assunto" value="adocao" checked>
+                        <label for="assunto-adocao">Quero Adotar</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="assunto-doacao" name="assunto" value="doacao">
+                        <label for="assunto-doacao">Quero Doar Mantimentos</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="assunto-voluntario" name="assunto" value="voluntario">
+                        <label for="assunto-voluntario">Quero ser Voluntário</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="assunto-outros" name="assunto" value="outros">
+                        <label for="assunto-outros">Outros</label>
+                    </li>
+                </ul>
 
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
-                </div>
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
 
                 <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
             </form>
-
         </section>
     </main>
 </body>
